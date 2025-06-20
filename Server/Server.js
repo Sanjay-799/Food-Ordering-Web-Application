@@ -1,32 +1,15 @@
+const express = require('express');
+const cors = require('cors');
+const dotenv = require('dotenv');
+const userRoutes = require('./routes/userRoutes');
 
+dotenv.config();
+const app = express();
 
-const express=require('express');
-const cors=require('cors');
-const mysql=require('mysql2');
+app.use(cors());
+app.use(express.json()); 
+app.use('/', userRoutes); 
 
-const app=express();
-app.use(cors()); 
-app.use(express.json());
-
-const db=mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'Sanjay@799',
-    database:'store'
-})
-
-db.connect((err,result)=>{
-    if(err){
-        console.log('Error to connect DB',err)
-        return
-    }
-    console.log('Database connected')
-
-})
-
-
-
-
-app.listen(3000,()=>{
-    console.log('server is running')
-})
+app.listen(3000, () => {
+    console.log('Server running on port 3000');
+});
