@@ -3,6 +3,10 @@ const router = express.Router();
 const db = require('../lib/db');
 const bcrypt = require('bcrypt');
 
+router.get('/',(req,res)=>{
+    res.send('default route')
+});
+
 
 router.post('/register', async (req, res) => {
     const { name, email, password } = req.body;
