@@ -1,0 +1,81 @@
+.pizza-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #ffffff;
+  
+  width: 100%;
+  margin: 10px auto;
+
+}
+
+
+.item-name {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.item-image {
+  max-height: 170px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.selectors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.selectors div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.selectors label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  font-family: 'Inter', sans-serif;
+}
+
+.selectors select {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.price-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-price {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.item-btn {
+  background-color: red;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.item-btn:hover {
+  background-color: darkred;
+}
