@@ -19,7 +19,7 @@ function RegisterPage() {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:3000/users', values);
+            const response = await axios.post('http://localhost:3000/register', values);
             console.log("User registered:", response.data);
             alert('Successfully Registered');
             navigate('/login');
