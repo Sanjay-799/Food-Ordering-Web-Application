@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Pizza-frontend
 =======
 # React + Vite
@@ -14,3 +15,6 @@ Currently, two official plugins are available:
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 >>>>>>> ec72b63 (push to git)
+=======
+# Food-order
+>>>>>>> 101c7f37f0f03a8c33a4914b05b022f96b6fed6c
